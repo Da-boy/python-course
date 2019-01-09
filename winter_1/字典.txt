@@ -1,0 +1,102 @@
+列表 list:
+
+1、list 列表 用[]表示，有索引下标、切片
+
+2、增删改查
+	(1)增加：append()，insert(),extend();
+	(2)删除：pop(),remove(),del list(),clear();
+	(3)修改：索引切片修改；
+	(4)查询：for循环
+3、常用操作：
+	(1)count()计数
+	(2)len() 求长度
+	(3)sort() 排序 reverse=True 为倒序
+	(4)reverse()顺序翻转 [::-1]
+4、嵌套
+	降维操作
+5、元组
+	tuple 只读列表，不能修改，不能修改的是元组内部第一层元素
+	
+字典 dict：用{}括起来，内部使用key:value的形式来保存数据
+	{'jj':'周记'，'jay':'林肯号'}
+注：字典的key必须是可哈希的，不可变的
+	列表不可哈希
+1、增加
+dic = {'百度':'李彦宏'}
+dic['腾讯'] = "马化腾" #新增
+dic['腾讯'] = "马勇" #如果key重复，会替换掉原来的value
+--dict1
+
+如果dict中没有出现过这个key-value，可以通过setdefault设置默认值
+dic.setdefault('李嘉诚')
+dic.setdefault('李嘉诚','房地产') #如果dict中已经存在，那么setdefault将不会起作用
+--dict2
+
+2、删除
+
+ret = dic.pop('key')
+print(ret)
+
+del dic['key']
+print(dic)
+
+dic.clear()#清空字典中所有内容
+--dict3
+
+3、修改
+
+dic = {'key1': '1g', 'key2': '2', 'key3': '3', 'key4': '4'}
+dic1 = {'key1': '1g', 'key2': '22', 'key3': '3', 'key4': '4', 'key5': '5'}
+dic.update(dic1) # 把dic1中的内容更新到dic中，如果key重名，则修改替换，如果不存在key,则新增
+print(dic)
+print(dic1)
+--dict4
+
+4、查询
+
+print(dic['name'])
+
+print(dic.get('name'))
+
+print(dic.get('name','value1')) #value1
+--dict5
+
+
+5、其他相关操作
+
+dic = {'key1': '1g', 'key2': '2', 'key3': '3', 'key4': '4'}
+
+print(dic.keys())
+for key in dic.keys():
+    print(key)
+print(dic.values())
+for value in dic.values():
+	print(value)
+print(dic.items())
+for item in dic.items():
+	print(key,value)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
