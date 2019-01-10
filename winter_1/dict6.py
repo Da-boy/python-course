@@ -15,5 +15,6 @@ print(dic.values())
 for value in dic.values():
     print(value)
 print(dic.items())
-for item in dic.items():
-	print(key,value)
+
+for key,value in dic.items():
+    print(key,value)
