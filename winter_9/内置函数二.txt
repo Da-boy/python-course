@@ -1,0 +1,23 @@
+内容：
+1、lambda 匿名函数：
+	语法：
+	函数名 = lambda 参数：返回值
+	注：
+		（1）函数的参数可以多个，多个参数用逗号隔开
+		（2）匿名函数不管多复杂，只能写一行，逻辑结束后直接返回数据
+		（3）返回值可以是任意数据类型
+2、sorted()：排序函数
+	sorted(iterable, key=None, reverse=False) 
+	
+	注：1、reverse -- 排序规则，reverse = True 降序 ， reverse = False 升序（默认）。
+		2、iterable -- 可迭代对象。
+		3、key ：排序规则（函数），在sorted内部将可迭代对象中的每一个元素传递给这个函数的参数，根据函数运算的结果进行排序
+		
+
+3、filter()：筛选函数
+	filter(function, iterable)
+4、map()：映射函数
+	map(function, iterable, ...)
+5、递归
+
+6、二分法
