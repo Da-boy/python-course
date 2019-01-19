@@ -6,9 +6,12 @@
 # @File    : dict3.py
 # @Software: PyCharm Community Edition
 
-dic = {'key1': '1', 'key2': '2', 'key3': '3', 'key4': '4'}
-print(dic.get('key1'))
-print(dic.get('hehe'))
-print(dic['key2'])
-print(dic.setdefault('key3'))
-print(dic.setdefault('key3', '88'))
+# 字典删除元素
+dic = {'key1': '1g', 'key2': '2', 'key3': '3', 'key4': '4'}
+ret = dic.pop('key1')
+print(dic)
+print(ret)
+del dic['key2']
+print(dic)
+dic.clear()
+print(dic)

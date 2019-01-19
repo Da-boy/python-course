@@ -9,12 +9,16 @@
 dic = {'key1': '1g', 'key2': '2', 'key3': '3', 'key4': '4'}
 
 print(dic.keys())
+print(list(dic.keys()))
 for key in dic.keys():
     print(key)
 print(dic.values())
 for value in dic.values():
     print(value)
 print(dic.items())
-
-for key,value in dic.items():
-    print(key,value)
+it = dic.__iter__()
+from collections import Iterable  # 可迭代的
+print(isinstance(it, Iterable))
+print(list(dic.items()))
+for key, value in dic.items():
+    print(key, value)

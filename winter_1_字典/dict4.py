@@ -9,5 +9,6 @@
 dic = {'key1': '1', 'key2': '2', 'key3': '3', 'key4': '4'}
 dic1 = {'key1': '1g', 'key2': '22', 'key3': '3', 'key4': '4', 'key5': '5'}
 dic.update(dic1)
+dic1.update(dic)
 print(dic)
 print(dic1)
