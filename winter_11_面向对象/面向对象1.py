@@ -26,16 +26,17 @@ class Person:
         print('人类会工作')
 
     def shop(self):
+        print(self)
         print('people can shop')
-
+    def sleep(self):
+        print('%s love sleep' % self.name)
 
 # 对象的角度
 # Person()  # 类名+（）的过程：实例化过程（创建一个对象的过程）
 # Person() ：实例化对象、实例、对象
 # 1、只要类名+（）产生一个对象(对象空间)
-# 2、自动执行类中的__init__方法
-# 3、将对象空间传给__init__的self参数
-# 4、给对象封装相应的属性
+# 2、自动执行类中的__init__方法,将对象空间传给__init__的self参数
+# 3、给对象封装相应的属性
 
 ret = Person('jia', 19, 'football')
 print(ret)
@@ -45,4 +46,14 @@ print(ret.__dict__)
 #  2、万能的 .
 print(ret.name)
 ret.high = 175
+del ret.name
+ret.age = 88
 print(ret.__dict__)
+# 对象操作类中的静态变量：只能查询
+print(ret.mind)
+# 对象调用类中的方法（通过对象执行类中的方法，而不是通过类名）
+ret.shop()
+
+
+daboy = Person('DAJAI',19,'footaball')
+daboy.sleep()
