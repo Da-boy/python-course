@@ -6,7 +6,9 @@
 # @File    : 组合.py
 # @Software: PyCharm Community Edition
 
-# 版本一
+# 版本二
+
+
 class Game_role:
     def __init__(self, name, ad, hp):
         self.name = name
@@ -16,6 +18,9 @@ class Game_role:
     def attack(self, p):
         p.hp = int(p.hp) - int(self.ad)
         print('%s attacked %s , %s loss %d blood ,remain %d blood' % (self.name, p.name, p.name, int(self.ad), p.hp))
+
+    def equipment_weapon(self, wea):
+        self.wea = wea
 
 
 # 添加武器类
@@ -32,7 +37,10 @@ class Weapon:
 p1 = Game_role('盖伦', 10, 100)
 p2 = Game_role('剑豪', 20, 80)
 
-axe = Weapon('斧头',50)
-bigsword = Weapon('宝剑',40)
-axe.fight(p1,p2)
-print(p2.hp)
+axe = Weapon('斧头', 50)
+bigsword = Weapon('宝剑', 40)
+
+p1.equipment_weapon(axe)
+
+print(axe)
+print(p1.wea)
