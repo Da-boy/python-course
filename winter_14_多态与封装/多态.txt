@@ -1,0 +1,17 @@
+python处处是多态
+python是弱类型语言
+python 不管什么类型，传入函数，封装对象都可以
+
+python没有多态，有鸭子函数
+鸭子函数：看着像鸭子，他就是鸭子
+
+这些类都互称为鸭子（约定俗成）
+class Str:
+	def index(self):
+		pass
+class List:
+	def index(self):
+		pass
+class Yuple:
+	def index(self):
+		pass
