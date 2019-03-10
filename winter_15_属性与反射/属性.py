@@ -25,3 +25,4 @@ p1 = Person('wo', 19)
 print(p1.age)  # 方法伪装成一个属性
 
 p1.age = 88
+print(p1.age)

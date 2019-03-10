@@ -9,7 +9,7 @@
 
 print('我是模块一')
 
-
+__all__ = ['login','name']
 def login():
 
     print('模块一登陆啦 %s' % name)

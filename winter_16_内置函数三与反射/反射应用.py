@@ -82,10 +82,11 @@ def main():
     operate_dic = cls.OPERATE_DIC
     # print(operate_dic)
     while True:
-        for num,i in enumerate(operate_dic,1):
-            print(num,i[0])
+        for num, i in enumerate(operate_dic, 1):
+            print(num, i[0])
         choice = int(input('num:'))
-        choice_item = operate_dic[choice-1]
-        getattr(obj,choice_item[1])()
+        choice_item = operate_dic[choice - 1]
+        getattr(obj, choice_item[1])()
+
 
 main()

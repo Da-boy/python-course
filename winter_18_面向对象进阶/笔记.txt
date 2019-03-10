@@ -1,9 +1,10 @@
 1、析构方法：释放一个空间之前执行的
 
 2、item
-    getitem
-    setitem
-    delitem
+	当 对象[] 需要实现item系列
+    getitem obj['name']
+    setitem obj['name'] = other
+    delitem del obj['name']
 
 3、hash
 	# 底层数据结构基于hash值寻址优化操作
@@ -11,8 +12,10 @@
 	# 对同一个值 在多次执行python代码的时候hash值不同
 	# 对同一个值 在同一次执行python代码的时候hash值永远不变
 	# hash(obj) obj内部必须实现了__hash__方法
+	set去重
 
 4、__eq__:
+	set去重
     def __eq__(self, other):
         if self.name == other.name and self.age == other.age:
             return True
